@@ -1,0 +1,53 @@
+#panacek{
+    height: 200px;
+}
+
+.obr{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    background-color: red;
+    border-radius: 200px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    padding: 1rem;
+}
+#panacek{
+    justify-content: flex-start;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+#nadpis{
+    font-size: 4em;
+    margin-left: 4.1rem;
+    margin-top: 6.5rem;
+    white-space: nowrap;
+}
+
+.obr:hover{
+    animation-name: rozbal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rozbal {
+    0% {
+        width: 300px;
+    }
+    100% {
+        width: 800px;
+    }
+}
+
+.idk{
+    display: flex;
+    flex-direction: column;
+}
+#text{
+    display: none;
+    margin-left: 4rem;
+    font-size: 2em;
+    overflow: scroll;
+    
+}
